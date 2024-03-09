@@ -10,8 +10,8 @@ LinguaConnect is an interactive language learning platform that connects languag
 ## Demo
 
 Watch a demo of LinguaConnect in action:
-[![LinguaConnect Demo]([https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg](https://drive.google.com/file/d/1QzCu_-mqPpkXko2q_8XSZyemG8WfLHZF/view?usp=sharing))]
 
+https://drive.google.com/file/d/1QzCu_-mqPpkXko2q_8XSZyemG8WfLHZF/view?usp=sharing
 
 ## Features
 
