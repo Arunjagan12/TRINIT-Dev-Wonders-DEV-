@@ -1,7 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Header = () => {
-  
+  useEffect(() => {
+    AOS.init({
+      // Global settings go here (optional)
+      duration: 800, // Duration of animation in milliseconds
+      easing: 'ease-in-out', // Easing function for the animation
+    });
+  }, []);  
 
   return (
     <div className="bg-yellow-400 font-sans w-full min-h-screen m-0">
@@ -53,15 +62,15 @@ const Header = () => {
   </div>
   
   <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
-    <h1 className="text-5xl font-bold leading-tight  mb-4">A serene hub to chill, hang out and learn languages effortlessly</h1>
-    <p className="text-lg text-gray-300 mb-8">Take customizable 1-on-1 live-sessions trusted by millions of users.</p>
-    <div className="mt-5 sm:flex gap-4 p-6 md:mt-8">
+    <h1  data-aos="fade-right" className="text-5xl font-bold leading-tight  mb-4">A serene hub to chill, hang out and learn languages effortlessly</h1>
+    <p  data-aos="fade-right" className="text-lg text-gray-300 mb-8">Take customizable 1-on-1 live-sessions trusted by millions of users.</p>
+    <div data-aos="zoom-in" className="mt-5 sm:flex gap-4 lg:p-6 md:mt-8">
     <a href="#" className="bg-yellow-400  text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">Start as a Tutor</a>
     <a href="#" className="bg-yellow-400  text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">Start as a Student</a>
     </div>
     <br />
     <br />
-    <form className="flex items-center max-w-sm mx-auto">   
+    <form data-aos="fade-up-left" className="flex items-center max-w-sm mx-auto">   
     <label htmlFor="simple-search" className="sr-only">Search</label>
     <div className="relative w-full">
         <input type="text" id="simple-search" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-yellow-500 focus:border-yellow-500 block w-full ps-10 p-2.5" placeholder="Courses, Tutors..." required />
